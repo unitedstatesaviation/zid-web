@@ -1,2 +1,2 @@
-## Division Site Template
-Make a copy and customize for your purposes.
+## Welcome to WARPUS
+This is the WARP United States Division's website.
