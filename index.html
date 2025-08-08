@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header {
+            background: #000;
+            color: #fff;
+            padding: 0 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .logo img {
+            height: 100%;
+            width: auto;
+            margin: 0;
+            display: block;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 24px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #00bcd4;
+        }
+    </style>
+    <style>
+        .main-content {
+            width: 100%;
+            max-width: 1000px;
+            height: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            backdrop-filter: blur(2px);
+            background: rgba(0,0,0,0.18);
+            border-radius: 32px;
+            box-shadow: 0 4px 32px 0 rgba(134,80,254,0.12);
+        }
+        main {
+            background: url('assets/world.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100vw;
+            height: 600px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25);
+            position: relative;
+            overflow: hidden;
+        }
+        .main-content h1 {
+            font-size: 4em;
+            margin-bottom: 0.4em;
+            letter-spacing: 4px;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            font-weight: 800;
+            color: #8650FE;
+            text-shadow: 0 2px 12px #000a;
+        }
+        .main-content h3 {
+            font-size: 2em;
+            font-weight: 500;
+            margin-top: 0;
+            color: #fff;
+            letter-spacing: 1.5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    </header>
+    <main>
+        <div class="main-content">
+            <h1>Division</h1>
+            <h3>Tagline</h3>
+        </div>
+    </main>
+</body>
+<script>
+// Load navbar.html into the placeholder
+fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+    });
+</script>
+</html>

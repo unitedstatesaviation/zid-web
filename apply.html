@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for an AOC</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header {
+            background: #000;
+            color: #fff;
+            padding: 0 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .logo img {
+            height: 100%;
+            width: auto;
+            margin: 0;
+            display: block;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 24px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #00bcd4;
+        }
+    </style>
+    <style>
+    /* Removed .main-content styles to eliminate the grey box */
+    </style>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <div style="text-align:center; margin-top:3em;">
+            <h1 style="font-size:2.8em; color:#8650FE; font-weight:800; letter-spacing:2px; text-shadow:0 2px 12px #0002; margin-bottom:0.5em;">Apply for an AOC</h1>
+            <p style="font-size:1.3em; color:#222; background:#f5f5ff; display:inline-block; padding:1em 2em; border-radius:18px; box-shadow:0 2px 12px #8650FE22; font-weight:500;">Please contact <span style='color:#8650FE;font-weight:700;'>Sebastian Kang</span> to apply for your Air Operators Certificate.</p>
+        </div>
+    </main>
+</body>
+<script>
+// Load navbar.html into the placeholder
+fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+    });
+</script>
+</html>

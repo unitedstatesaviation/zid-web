@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header {
+            background: #000;
+            color: #fff;
+            padding: 0 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .logo img {
+            height: 100%;
+            width: auto;
+            margin: 0;
+                    <a href="admin.html" class="admin-link">Flight Creation</a>
+                    <br>
+                    <a href="admin.html" class="admin-link">AOC Creation Division Admins Only</a>
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 24px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #00bcd4;
+        }
+    </style>
+    <style>
+    /* Removed .main-content styles to eliminate the grey box */
+    </style>
+    <style>
+    .admin-link {
+        display: inline-block;
+        margin: 0.5em 1em 0.5em 0;
+        padding: 0.75em 1.5em;
+        background: linear-gradient(90deg, #8650FE 0%, #00bcd4 100%);
+        color: #fff !important;
+        border: none;
+        border-radius: 24px;
+        font-size: 1.1em;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(134,80,254,0.10);
+        transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    }
+    .admin-link:hover {
+        background: linear-gradient(90deg, #00bcd4 0%, #8650FE 100%);
+        color: #fff;
+        box-shadow: 0 4px 16px rgba(0,188,212,0.15);
+        transform: translateY(-2px) scale(1.03);
+    }
+    </style>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <div style="text-align: center; margin-top: 2em;">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSclwYVs-to5ZPKG794KmdIxX9o1a6k1PDcFRHVoC7w3vDtgwg/viewform?usp=header" class="admin-link">Flight Creation</a>
+            <br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvqTq8WGnMRjvA9J8A6BlrI0EeZ7JBxM2P2xK2QJ4A9tkfDQ/viewform?usp=header" class="admin-link">AOC Creation Division Admins Only</a>
+        </div>
+    </main>
+</body>
+<script>
+// Load navbar.html into the placeholder
+fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+    });
+</script>
+</html>
