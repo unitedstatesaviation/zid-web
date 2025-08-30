@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="assets/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Divisions</title>
     <style>
         body { margin: 0; font-family: Arial, sans-serif; }
         header {
@@ -43,34 +43,13 @@
         }
     </style>
     <style>
-        .main-content {
-            width: 100%;
-            max-width: 1000px;
-            height: 500px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
-            backdrop-filter: blur(2px);
-            background: rgba(0,0,0,0.18);
-            border-radius: 32px;
-            box-shadow: 0 4px 32px 0 rgba(134,80,254,0.12);
-        }
+        /* .main-content styles removed for full screen embed */
         main {
-            background: url('assets/capital.jpg') no-repeat center center;
-            background-size: cover;
             width: 100vw;
-            height: 600px;
+            height: 100vh;
             margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25);
-            position: relative;
-            overflow: hidden;
+            padding: 0;
+            background: none;
         }
         .main-content h1 {
             font-size: 4em;
@@ -78,7 +57,7 @@
             letter-spacing: 4px;
             font-family: 'Segoe UI', 'Arial', sans-serif;
             font-weight: 800;
-            color: #E22401;
+            color: #8650FE;
             text-shadow: 0 2px 12px #000a;
         }
         .main-content h3 {
@@ -86,19 +65,23 @@
             font-weight: 500;
             margin-top: 0;
             color: #fff;
+            text-shadow: 0 2px 12px #8650FE, 0 1px 4px #000a;
             letter-spacing: 1.5px;
         }
     </style>
 </head>
 <body>
+    <div style="display: flex; flex-direction: column; height: 100vh; width: 100vw; margin: 0; padding: 0;">
     <div id="navbar-placeholder"></div>
-    </header>
-    <main>
-        <div class="main-content">
-            <h1>WARP United States Division</h1>
-            <h3>Providing roleplay aviation services to the United States of America</h3>
-        </div>
-    </main>
+        <main style="flex: 1 1 auto; width: 100vw; height: 0; margin: 0; padding: 0; background: none; overflow: hidden;">
+            <iframe 
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSisRbDWBNDMs5am8VwSCbR45dz1ELgYB4a72KJrpa7lUm1I1k2KcI44PQw7mzZZu3H_WSyJkDuGr3u/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+                style="border:none;width:100vw;height:100%;margin:0;padding:0;overflow:hidden;z-index:1;display:block;"
+                allowfullscreen
+                loading="lazy"
+            ></iframe>
+        </main>
+    </div>
 </body>
 <script>
 // Load navbar.html into the placeholder
