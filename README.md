@@ -1,2 +1,2 @@
-## Main Website of the United States Aviation Roleplay
+## Website of the Virtual Honolulu ARTCC
 Welcome!
