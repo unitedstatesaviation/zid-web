@@ -1,2 +1,2 @@
-## Welcome to WARPUS
-This is the WARP United States Division's website.
+## Main Website of the United States Aviation Roleplay
+Welcome!
